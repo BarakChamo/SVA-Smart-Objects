@@ -36,15 +36,17 @@ to get a good grasp on the physical, or electrical side of things.
 [A brief explaination of volatage on YouTube](https://www.youtube.com/watch?v=w82aSjLuD_8)
 
 #### Current
-[A brief explaination of current on YouTube](https://www.youtube.com/watch?v=kcL2_D33k3o&list=PLWv9VM947MKi_7yJ0_FCfzTBXpQU-Qd3K&index=2)
+[A brief explaination of current on YouTube](https://www.youtube.com/watch?v=kcL2_D33k3o)
 
 #### Resistance and Ohm's Law
-[A brief explaination of Ohm's law](https://www.youtube.com/watch?v=HsLLq6Rm5tU&list=PLWv9VM947MKjuqlJVp5m_Edf66SrFSHx2&index=10)
+[A brief explaination of Ohm's law](https://www.youtube.com/watch?v=HsLLq6Rm5tU)
 [Ohm's law calculator](https://theengineeringmindset.com/ohms-law-calculator/)
 
 ##### Why do I need to know this?!
 
 #### DC Circuits
+[An introduction to DC circuits in series](https://www.youtube.com/watch?v=VV6tZ3Aqfuc)
+[An introduction to DC circuits in parallel](https://www.youtube.com/watch?v=5uyJezQNSHw)
 
 ### Component Glossary
 
