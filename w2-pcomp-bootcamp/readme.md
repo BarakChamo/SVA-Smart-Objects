@@ -50,6 +50,7 @@ https://learn.adafruit.com/adafruit-feather
 https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/using-with-arduino-ide
 https://learn.adafruit.com/adafruit-huzzah32-esp32-feather
 https://www.wemos.cc/en/latest/d32/d32_pro.html
+https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/esp32-faq
 https://m5stack.com/
 
 ### Alternative IoT Platforms
