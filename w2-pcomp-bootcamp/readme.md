@@ -4,9 +4,9 @@
 ## Contents
 - [what is physical computing?](#what-is-physical-computing)
 - [Electronics fundamentals](#electronics-fundamentals)
-- [Hello Arduino](#hello-arduino)
-- [Tools of the Trade](tools-of-the-trade)
 - [Component Glossary](#component-glossary)
+- [Tools of the Trade](tools-of-the-trade)
+- [Hello Arduino](#hello-arduino)
 - [Introduction to the ESP32](#introduction-to-the-esp32)
 - [Alternative IoT Platforms](#alternative-iot-platforms)
 
@@ -33,6 +33,10 @@ Before we get to the computing part (by programmming microcontrollers) it's impo
 to get a good grasp on the physical, or electrical side of things.
 
 
+### Component Glossary
+
+### Tools of the Trade
+
 ### Hello Arduino
 Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output.
 
@@ -40,9 +44,6 @@ Arduino simplifies the process of working with microcontrollers by offering a un
 
 To use Arduino install the [Arduino Development Enviroment](https://www.arduino.cc/en/software) for your operating system and follow this [AdaFruit guide to set up your Feather board in the Arduino board manager](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/using-with-arduino-ide).
 
-### Tools of the Trade
-
-### Component Glossary
 
 ### Introduction to the ESP32 and AdaFruit Feather 
 https://www.adafruit.com/product/3405
