@@ -4,6 +4,10 @@
 ## Contents
 - [what is physical computing?](#what-is-physical-computing)
 - [Electronics fundamentals](#electronics-fundamentals)
+  - [Voltage](#voltage)
+  - [Current](#current)
+  - [Resistance and Ohm's law](#resistance-and-ohms-law)
+  - [DC Circuits](#dc-circuits)
 - [Component Glossary](#component-glossary)
 - [Tools of the Trade](tools-of-the-trade)
 - [Hello Arduino](#hello-arduino)
