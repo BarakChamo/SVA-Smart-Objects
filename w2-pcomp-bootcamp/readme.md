@@ -66,14 +66,21 @@ Arduino simplifies the process of working with microcontrollers by offering a un
 
 To use Arduino install the [Arduino Development Enviroment](https://www.arduino.cc/en/software) for your operating system and follow this [AdaFruit guide to set up your Feather board in the Arduino board manager](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/using-with-arduino-ide).
 
+### Elements of Microcontrollers
 
 ### Introduction to the ESP32 and AdaFruit Feather 
-https://www.adafruit.com/product/3405
-https://learn.adafruit.com/adafruit-feather
-https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/using-with-arduino-ide
-https://learn.adafruit.com/adafruit-huzzah32-esp32-feather
-https://www.wemos.cc/en/latest/d32/d32_pro.html
-https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/esp32-faq
-https://m5stack.com/
+The microcontroller you received from IxD is an [Adafruit Feather Huzzah 32](https://www.adafruit.com/product/3405). It's a small board that packs a serious punch, based on the [Espressif ESP32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/esp32-faq), a dual-core microcontroller that features built-in WiFi, Bluetooth, battery power and flash memory.
+
+The ESP32 is compatible with the Arduino runtime, meaning that you can program it using the [Arduino language and the Arduino IDE](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/using-with-arduino-ide
+), but still [benefit from the power of the ESP32 board](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather
+).
+
+We chose the Adafruit board for you because Adafruit provides a wealth of educational information and the board is compatible with the [Adafruit Feather Wing modular extension system.](https://learn.adafruit.com/adafruit-feather)
+
+#### Moving forward with ESP32 based boards and microcontrollers
+
+The great this about the ESP32 platform, especially when coupled with Arduino-based development, is that you can easily move your project to another board with more features or a different layout, with minimal changes to your code.
+
+For example, if you want to connect your ESP32 project to a screen and read data from an SD card, you could swap the Adafruit Feather for a [Lolin D32 Pro 2.0](https://www.wemos.cc/en/latest/d32/d32_pro.html) that has built in SD card and TFT screen interfaces. Or, if you're looking for a more polished controller, with built in screen and buttons, you could opt for the ESP32 based [M5 Stack modular platform](https://m5stack.com/).
 
 ### Alternative IoT Platforms
