@@ -27,13 +27,33 @@ smart objects, interactive installations, robots or any product with a computer 
 All physical computing project are, essentially, small computers that interact with
 custom circuits, be it as simple as an Arduino detecting button clicks and lighting up
 an LED or a WiFi-enabled controller that senses temperature and moisture levels and 
-alerts you to water your basil in time.
-
-Before we get to the computing part (by programmming microcontrollers) it's important
+alerts you to water your basil in time. Before we get to the computing part (by programmming microcontrollers) it's important
 to get a good grasp on the physical, or electrical side of things.
 
 
+
+#### Voltage
+[A brief explaination of volatage on YouTube](https://www.youtube.com/watch?v=w82aSjLuD_8)
+
+#### Current
+[A brief explaination of current on YouTube](https://www.youtube.com/watch?v=kcL2_D33k3o&list=PLWv9VM947MKi_7yJ0_FCfzTBXpQU-Qd3K&index=2)
+
+#### Resistance and Ohm's Law
+[A brief explaination of Ohm's law](https://www.youtube.com/watch?v=HsLLq6Rm5tU&list=PLWv9VM947MKjuqlJVp5m_Edf66SrFSHx2&index=10)
+[Ohm's law calculator](https://theengineeringmindset.com/ohms-law-calculator/)
+
+##### Why do I need to know this?!
+
+#### DC Circuits
+
 ### Component Glossary
+
+#### Capacitors
+[A brief exaplaination of capacitors](https://www.youtube.com/watch?v=X4EUwTwZ110)
+
+#### Diodes
+[A brief exaplaination of diodes](https://www.youtube.com/watch?v=Fwj_d3uO5g8)
+
 
 ### Tools of the Trade
 
