@@ -15,6 +15,6 @@ To clone the repository, run the following git command in your terminal of choic
 `git clone https://github.com/BarakChamo/SVA-Smart-Objects.git`
 
 example projects are Arduino projects and can be opened by the Arduino IDE
-
+![Opening a project in the Arduino IDE](https://user-images.githubusercontent.com/2883345/104674072-fa63a800-56b0-11eb-8545-3b960d25c4b4.PNG)
 
 ### Setting up your computer to run the examples
