@@ -4,6 +4,11 @@ Welcome to the class repository for SVA IxD's Smart Objects 2021!
 
 The repo is divided into topics by week, each week folder has a readme with relevant information and example project files.
 
+### Class pages
+- [Week 2 - Physical computing bootcamp](https://github.com/BarakChamo/SVA-Smart-Objects/tree/main/w2-pcomp-bootcamp)
+- [Week 3 - Connect all the Things](https://github.com/BarakChamo/SVA-Smart-Objects/tree/main/w3-connect-all-the-things)
+- [Week 4 - Sensing and Sense-making](https://github.com/BarakChamo/SVA-Smart-Objects/tree/main/w4-sensing-sense-making)
+
 ### Using the class repository
 
 To review class notes and readme files it is best to browse the repository on Github.com, `md` files are rendered with links and images and repository links make it easy to navigate.
