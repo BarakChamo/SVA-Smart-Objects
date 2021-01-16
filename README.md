@@ -25,3 +25,5 @@ To install the Arduino IDE download the installer compatible with your OS from t
 
 Example projects are Arduino projects and can be opened by the Arduino IDE
 ![Opening a project in the Arduino IDE](https://user-images.githubusercontent.com/2883345/104674072-fa63a800-56b0-11eb-8545-3b960d25c4b4.PNG)\
+
+[Week 2's class notes](https://github.com/BarakChamo/SVA-Smart-Objects/tree/main/w2-pcomp-bootcamp#introduction-to-the-esp32-and-adafruit-feather) provide detailed setup instructions for your Adafruit Feather board in the Arduino IDE
