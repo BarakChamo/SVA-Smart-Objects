@@ -103,9 +103,32 @@ It stands to reason that we can't fit as much volume through a narrow pipe than 
 
 In electrical terms, this is represented by two circuits with equal voltages and different resistances. The circuit with the higher resistance will allow less charge to flow, meaning the circuit with higher resistance has less current flowing through it.
 
-This brings us back to Georg Ohm. Ohm defines the unit of resistance of "1 Ohm" as the resistance between two points in a conductor where the application of 1 volt will push 1 ampere, or 6.241×10^18 electrons. This value is usually represented in schematics with the greek letter "Ω", which is called omega, and pronounced "ohm".
+This brings us to Georg Ohm. Ohm defines the unit of resistance of "1 Ohm" as the resistance between two points in a conductor where the application of 1 volt will push 1 ampere, or 6.241×10^18 electrons. This value is usually represented in schematics with the greek letter "Ω", which is called omega, and pronounced "ohm".
 
-##### Why do I need to know this?!
+##### Ohm's Law (or how to put all this to practice)
+
+
+Combining the elements of voltage, current, and resistance, Ohm developed the formula:
+
+alt text
+Where
+
+V = Voltage in volts
+I = Current in amps
+R = Resistance in ohms
+This is called Ohm's law. Let's say, for example, that we have a circuit with the potential of 1 volt, a current of 1 amp, and resistance of 1 ohm. Using Ohm's Law we can say:
+
+![A](https://cdn.sparkfun.com/assets/8/7/5/3/0/5112d060ce395f432a000000.gif)
+Let's say this represents our tank with a wide hose. The amount of water in the tank is defined as 1 volt and the "narrowness" (resistance to flow) of the hose is defined as 1 ohm. Using Ohms Law, this gives us a flow (current) of 1 amp.
+
+Using this analogy, let's now look at the tank with the narrow hose. Because the hose is narrower, its resistance to flow is higher. Let's define this resistance as 2 ohms. The amount of water in the tank is the same as the other tank, so, using Ohm's Law, our equation for the tank with the narrow hose is
+
+![B](https://cdn.sparkfun.com/assets/6/c/a/b/5/5112d060ce395f1c27000001.gif)
+But what is the current? Because the resistance is greater, and the voltage is the same, this gives us a current value of 0.5 amps:
+
+![C](https://cdn.sparkfun.com/assets/a/f/6/e/7/5112d060ce395fb227000001.gif)
+
+![measurements](https://cdn.sparkfun.com/assets/3/a/c/7/6/5113d1c3ce395fec01000000.png)
 
 #### DC Circuits
 [An introduction to DC circuits in series](https://www.youtube.com/watch?v=VV6tZ3Aqfuc)
