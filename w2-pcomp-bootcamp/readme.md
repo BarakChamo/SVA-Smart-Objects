@@ -161,6 +161,24 @@ But what is the current? Because the resistance is greater, and the voltage is t
 ## Component Glossary
 
 ### Circuit notation
+Each of the following components, and many others, have a marked notation that makes them easy to identify in circuit diagrams. 
+Familiarize yourselves with the notations and use them to refer to shared circuits and document your own.
+
+![component notation](http://s3-ap-southeast-1.amazonaws.com/subscriber.images/physics/2017/08/23084723/Electric-Circuit-Symbols.png)
+
+These components are then organized in circuit diagrams such as this one:
+
+![circuit diagram](https://electronarrative.files.wordpress.com/2015/02/7-basic-plots-7-rebirth.png)
+
+Always identify and note the power source, which indicates the polarity and direction of the circuit - as a rule the large line is always the positive, and the thicker short line is negative.
+
+![power notation](https://www.electronicsclub.info/symbols/cell.gif)
+
+These may come in many variations but share the same principle and their polarity is clearly discernible.
+![DC power supply](https://www.electronicsclub.info/symbols/dcsupply.gif)
+![battery pack](https://www.electronicsclub.info/symbols/battery.gif)
+
+[Refer to this list for a comprehensive review of circuit symbols.](https://www.electronicsclub.info/circuitsymbols.htm)
 
 ### Resistors
 
