@@ -266,6 +266,7 @@ between pins that are mounted on the same strip, and what make the "solderless c
 So why are some pins connected and others not? and why are the orientations different?
 
 Let's review the topology of a breadboard:
+
 ![breadboard topology](https://static1.makeuseofimages.com/wp-content/uploads/2018/06/breadboard_annotated_670-1.jpg?q=50&fit=crop&w=750&dpr=1.5)
 
 Most larger breadboards wil have two long lines on either side noted as `+` or `-`, these are the power terminals that are meant to make power delivery
