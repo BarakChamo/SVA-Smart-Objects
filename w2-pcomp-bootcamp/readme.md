@@ -9,6 +9,7 @@
   - [Resistance and Ohm's law](#resistance-and-ohms-law)
   - [DC Circuits](#dc-circuits)
 - [Component Glossary](#component-glossary)
+  - [Circuit notation](#circuit-notation)
 - [Tools of the Trade](tools-of-the-trade)
 - [Hello Arduino](#hello-arduino)
 - [Introduction to the ESP32](#introduction-to-the-esp32)
@@ -16,11 +17,14 @@
 
 ## Example projects
 - [Hello World]()
-- [First Blink]()
 - [Serial read and write]()
+- [First Blink and PWM]()
 - [Working with analog inputs and outputs]()
 - [Working with digital inputs and outputs]()
 - [Timing and flow control]()
+
+## Additional readings
+- [Introduction to basic circuits](https://learn.sparkfun.com/tutorials/what-is-a-circuit/all)
 
 -----
 
@@ -156,12 +160,23 @@ But what is the current? Because the resistance is greater, and the voltage is t
 
 ## Component Glossary
 
+### Circuit notation
+
+### Resistors
+
+### Potentiometers
+
 ### Capacitors
 [A brief exaplaination of capacitors](https://www.youtube.com/watch?v=X4EUwTwZ110)
 
 ### Diodes
 [A brief exaplaination of diodes](https://www.youtube.com/watch?v=Fwj_d3uO5g8)
 
+#### Light emitting diodes (LEDs)
+
+#### Transistors
+
+#### Switches
 
 ## Tools of the Trade
 
