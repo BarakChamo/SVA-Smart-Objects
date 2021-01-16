@@ -18,7 +18,7 @@
 - [Alternative IoT Platforms](#alternative-iot-platforms)
 
 ## Example projects
-- [Basic circuits]()
+- [Basic analog circuit]()
 - [Hello World]()
 - [Serial read and write]()
 - [First Blink and PWM]()
