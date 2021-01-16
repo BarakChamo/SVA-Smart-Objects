@@ -14,6 +14,14 @@
 - [Introduction to the ESP32](#introduction-to-the-esp32)
 - [Alternative IoT Platforms](#alternative-iot-platforms)
 
+## Example projects
+- [Hello World]()
+- [First Blink]()
+- [Serial read and write]()
+- [Working with analog inputs and outputs]()
+- [Working with digital inputs and outputs]()
+- [Timing and flow control]()
+
 ## What is Physical Computing?
 Physical computing is the creation of computer systems that interact with the physical world and physical body.
 It provides tools that bridge the analog and digital worlds. From
@@ -115,6 +123,7 @@ This brings us to Georg Ohm. Ohm defines the unit of resistance of "1 Ohm" as th
 Combining the elements of voltage, current, and resistance, Ohm developed the formula:
 
 ![_](https://cdn.sparkfun.com/assets/a/5/0/2/6/5113d140ce395f777e000000.gif)
+
 Where
 
 V = Voltage in volts
