@@ -7,9 +7,9 @@
   - [Voltage](#voltage)
   - [Current](#current)
   - [Resistance and Ohm's law](#resistance-and-ohms-law)
-  - [DC Circuits](#dc-circuits)
 - [Component Glossary](#component-glossary)
   - [Circuit notation](#circuit-notation)
+- [DC Circuits](#dc-circuits)
 - [Tools of the Trade](tools-of-the-trade)
   - [Multimeter](#multimeter)
   - [Breadboard](#breadboard)
@@ -159,15 +159,6 @@ But what is the current? Because the resistance is greater, and the voltage is t
 
 ![measurements](https://cdn.sparkfun.com/assets/3/a/c/7/6/5113d1c3ce395fec01000000.png)
 
-### DC Circuits
-[An introduction to DC circuits in series](https://www.youtube.com/watch?v=VV6tZ3Aqfuc)
-
-[An introduction to DC circuits in parallel](https://www.youtube.com/watch?v=5uyJezQNSHw)
-
-[In depth overview of DC circuits on Sparkfun](https://learn.sparkfun.com/tutorials/series-and-parallel-circuits)
-
-[Understanding analog and digital circuits](https://learn.sparkfun.com/tutorials/analog-vs-digital) 
-
 -----
 
 ## Component Glossary
@@ -222,6 +213,23 @@ There are various components that can turn light into electricity or vice-versa.
 Easily the most important components in computers, transistors can switch tiny electric currents on and off or amplify them (transform small electric currents into much larger ones). Transistors that work as switches act as the memories in computers, while transistors working as amplifiers boost the volume of sounds in hearing aids. When transistors are connected together, they make devices called logic gates that can carry out very basic forms of decision making. (Thyristors are a little bit like transistors, but work in a different way.)
 
 ![Transistor](https://cdn4.explainthatstuff.com/fettransistor.jpg)
+
+-------
+
+### DC Circuits
+[An introduction to DC circuits in series](https://www.youtube.com/watch?v=VV6tZ3Aqfuc)
+
+[An introduction to DC circuits in parallel](https://www.youtube.com/watch?v=5uyJezQNSHw)
+
+[In depth overview of DC circuits on Sparkfun](https://learn.sparkfun.com/tutorials/series-and-parallel-circuits)
+
+[Understanding analog and digital circuits](https://learn.sparkfun.com/tutorials/analog-vs-digital) 
+
+Now that we understand the principles of electrical flow, and the components used to control and manipulate it, it's time to put these together in circuits.
+
+
+
+-------
 
 ## Tools of the Trade
 
