@@ -11,6 +11,8 @@
 - [Component Glossary](#component-glossary)
   - [Circuit notation](#circuit-notation)
 - [Tools of the Trade](tools-of-the-trade)
+  - [Multimeter](#multimeter)
+  - [Breadboard](#breadboard)
 - [Hello Arduino](#hello-arduino)
 - [Introduction to the ESP32](#introduction-to-the-esp32)
 - [Alternative IoT Platforms](#alternative-iot-platforms)
@@ -201,13 +203,24 @@ These may come in many variations but share the same principle and their polarit
 
 ## Tools of the Trade
 
-### Breadboard
-![A very detailed overview of breadboards](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard)
-
-
-### Jumper cables
-
 ### Multimeter
+[A very detailed overview of multimeters](https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter)
+
+A multimeter or a multitester, is an electronic measuring instrument that combines several measurement functions in one unit. 
+A typical multimeter can measure voltage, current, and resistance as well as continuity, or if a circuit is open or closed.
+
+Multimeters come in many shapes and sizes but generally feature a reading display and a dial for mode setting and sensitivity (calbirating the multimeter for voltage and current ranges).
+
+![Multimeter example](https://cpc.farnell.com/productimages/large/en_GB/IN07444-40.jpg).
+
+Multimeter probes are used to contact points in the circuit we wish to test.
+
+![Multimeter used](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/1/01_Multimeter_Tutorial-19.jpg)
+
+
+### Breadboard
+[A very detailed overview of breadboards](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard)
+
 
 -----
 
