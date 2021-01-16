@@ -161,6 +161,8 @@ But what is the current? Because the resistance is greater, and the voltage is t
 
 [In depth overview of DC circuits on Sparkfun](https://learn.sparkfun.com/tutorials/series-and-parallel-circuits)
 
+[Understanding analog and digital circuits](https://learn.sparkfun.com/tutorials/analog-vs-digital) 
+
 -----
 
 ## Component Glossary
@@ -187,19 +189,34 @@ These may come in many variations but share the same principle and their polarit
 
 ### Resistors
 
+These are the simplest components in any circuit. Their job is to restrict the flow of electrons and reduce the current or voltage flowing by converting electrical energy into heat. Resistors come in many different shapes and sizes. Variable resistors (also known as potentiometers) have a dial control on them so they change the amount of resistance when you turn them. Volume controls in audio equipment use variable resistors like these.
+
 ### Potentiometers
 
 ### Capacitors
 [A brief exaplaination of capacitors](https://www.youtube.com/watch?v=X4EUwTwZ110)
 
+These relatively simple components that hold electrical charge. They consist of two pieces of conducting material (such as metal) separated by a non-conducting (insulating) material called a dielectric. Capacitors hold charge and release it under certain electrical conditiond and are often used as power storage and timing devices, but they can transform electrical currents in other ways too. In a radio, one of the most important jobs, tuning into the station you want to listen to, is done by a capacitor.
+
+![capacitor](https://cdn4.explainthatstuff.com/smallcapacitor.jpg)
+
 ### Diodes
 [A brief exaplaination of diodes](https://www.youtube.com/watch?v=Fwj_d3uO5g8)
 
-#### Light emitting diodes (LEDs)
+The electronic equivalents of one-way streets, diodes allow an electric current to flow through them in only one direction. They are also known as rectifiers. Diodes can be used to change alternating currents (ones flowing back and forth round a circuit, constantly swapping direction) into direct currents (ones that always flow in the same direction).
+
+![diode](https://cdn4.explainthatstuff.com/diode.jpg)
+
+#### Opto-electricals (LEDs, light sensors, LCDs)
+There are various components that can turn light into electricity or vice-versa. Photocells (also known as photoelectric cells) generate tiny electric currents when light falls on them and they're used as "magic eye" beams in various types of sensing equipment, including some kinds of smoke detector. Light-emitting diodes (LEDs) work in the opposite way, converting small electric currents into light. LEDs are typically used on the instrument panels of stereo equipment. Liquid crystal displays (LCDs), such as those used in flatscreen LCD televisions and laptop computers, are more sophisticated examples of opto-electronics.
+
+![led](https://cdn4.explainthatstuff.com/led2.jpg)
 
 #### Transistors
 
-#### Switches
+Easily the most important components in computers, transistors can switch tiny electric currents on and off or amplify them (transform small electric currents into much larger ones). Transistors that work as switches act as the memories in computers, while transistors working as amplifiers boost the volume of sounds in hearing aids. When transistors are connected together, they make devices called logic gates that can carry out very basic forms of decision making. (Thyristors are a little bit like transistors, but work in a different way.)
+
+![Transistor](https://cdn4.explainthatstuff.com/fettransistor.jpg)
 
 ## Tools of the Trade
 
