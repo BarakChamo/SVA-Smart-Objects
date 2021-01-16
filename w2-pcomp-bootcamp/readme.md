@@ -14,7 +14,7 @@
 - [Introduction to the ESP32](#introduction-to-the-esp32)
 - [Alternative IoT Platforms](#alternative-iot-platforms)
 
-### What is Physical Computing?
+## What is Physical Computing?
 Physical computing is the creation of computer systems that interact with the physical world and physical body.
 It provides tools that bridge the analog and digital worlds. From
 the inputs of sensors to environment to outputting light, sound, and/or motion,
@@ -26,7 +26,7 @@ of tangible systems, embodied HCI and protoypes new forms of interactive systems
 Physical computing skills will serve you well as you venture off to prototype, design and build
 smart objects, interactive installations, robots or any product with a computer in it.
 
-### Electronics fundamentals
+## Electronics fundamentals
 
 All physical computing project are, essentially, small computers that interact with
 custom circuits, be it as simple as an Arduino detecting button clicks and lighting up
@@ -45,7 +45,7 @@ is not 100% physically accurate, it is sufficient for understanding basic princi
 how these translate to voltage and current, and how they can be manipulated.
 
 
-#### Voltage
+### Voltage
 [A brief explaination of volatage on YouTube](https://www.youtube.com/watch?v=w82aSjLuD_8)
 [More info about the physics behind voltage and electrical potential](https://www.youtube.com/watch?v=z8qfhFXjsrw&feature=emb_title)
 
@@ -65,7 +65,7 @@ The pressure at the end of the hose can represent voltage. The water in the tank
 
 We can think of this tank as a battery, a place where we store a certain amount of energy and then release it. If we drain our tank a certain amount, the pressure created at the end of the hose goes down. We can think of this as decreasing voltage, like when a flashlight gets dimmer as the batteries run down. There is also a decrease in the amount of water that will flow through the hose. Less pressure means less water is flowing, which brings us to current.
 
-#### Current
+### Current
 [A brief explaination of current on YouTube](https://www.youtube.com/watch?v=kcL2_D33k3o)
 [Another great review of electrical current](https://www.youtube.com/watch?v=kYwNj9uauJ4&feature=emb_title) 
 
@@ -88,7 +88,7 @@ Now we're starting to see the relationship between voltage and current. But ther
 - Flow = Current (measured in Amperes, or "Amps" for short)
 - **Hose Width = Resistance**
 
-#### Resistance and Ohm's Law
+### Resistance and Ohm's Law
 [A brief explaination of Ohm's law](https://www.youtube.com/watch?v=HsLLq6Rm5tU)
 [Another great visual demonstration of Ohm's law](https://www.youtube.com/watch?v=8jB6hDUqN0Y&feature=emb_title)
 [Ohm's law calculator](https://theengineeringmindset.com/ohms-law-calculator/)
@@ -105,7 +105,7 @@ In electrical terms, this is represented by two circuits with equal voltages and
 
 This brings us to Georg Ohm. Ohm defines the unit of resistance of "1 Ohm" as the resistance between two points in a conductor where the application of 1 volt will push 1 ampere, or 6.241×10^18 electrons. This value is usually represented in schematics with the greek letter "Ω", which is called omega, and pronounced "ohm".
 
-##### Ohm's Law (or how to put all this to practice)
+#### Ohm's Law (or how to put all this to practice)
 
 
 Combining the elements of voltage, current, and resistance, Ohm developed the formula:
@@ -130,31 +130,43 @@ But what is the current? Because the resistance is greater, and the voltage is t
 
 ![measurements](https://cdn.sparkfun.com/assets/3/a/c/7/6/5113d1c3ce395fec01000000.png)
 
-#### DC Circuits
+### DC Circuits
 [An introduction to DC circuits in series](https://www.youtube.com/watch?v=VV6tZ3Aqfuc)
 [An introduction to DC circuits in parallel](https://www.youtube.com/watch?v=5uyJezQNSHw)
 
-### Component Glossary
+## Component Glossary
 
-#### Capacitors
+### Capacitors
 [A brief exaplaination of capacitors](https://www.youtube.com/watch?v=X4EUwTwZ110)
 
-#### Diodes
+### Diodes
 [A brief exaplaination of diodes](https://www.youtube.com/watch?v=Fwj_d3uO5g8)
 
 
-### Tools of the Trade
+## Tools of the Trade
 
-### Hello Arduino
+### Microcontroller
+
+### Breadboard
+
+### Jumper cables
+
+### Multimeter
+
+## Hello Arduino
 Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output.
 
 Arduino simplifies the process of working with microcontrollers by offering a unified environment for a a range of boards, sensors, and compatible hardware - that means that you don't have to dig through long data sheets, run command line compilers, etc. The Arduino community is both vibrant and helpful and many projects, from controlling programmable LEDs to a plethora of sensors, are available and well documented.
 
 To use Arduino install the [Arduino Development Enviroment](https://www.arduino.cc/en/software) for your operating system and follow this [AdaFruit guide to set up your Feather board in the Arduino board manager](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/using-with-arduino-ide).
 
-### Elements of Microcontrollers
+## Elements of Microcontrollers
 
-### Introduction to the ESP32 and AdaFruit Feather 
+### CPU
+
+### GPIO
+
+## Introduction to the ESP32 and AdaFruit Feather 
 The microcontroller you received from IxD is an [Adafruit Feather Huzzah 32](https://www.adafruit.com/product/3405). It's a small board that packs a serious punch, based on the [Espressif ESP32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/esp32-faq), a dual-core microcontroller that features built-in WiFi, Bluetooth, battery power and flash memory.
 
 The ESP32 is compatible with the Arduino runtime, meaning that you can program it using the [Arduino language and the Arduino IDE](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/using-with-arduino-ide
