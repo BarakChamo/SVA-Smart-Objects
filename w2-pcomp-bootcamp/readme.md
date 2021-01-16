@@ -22,6 +22,8 @@
 - [Working with digital inputs and outputs]()
 - [Timing and flow control]()
 
+-----
+
 ## What is Physical Computing?
 Physical computing is the creation of computer systems that interact with the physical world and physical body.
 It provides tools that bridge the analog and digital worlds. From
@@ -33,6 +35,8 @@ of tangible systems, embodied HCI and protoypes new forms of interactive systems
 
 Physical computing skills will serve you well as you venture off to prototype, design and build
 smart objects, interactive installations, robots or any product with a computer in it.
+
+-----
 
 ## Electronics fundamentals
 
@@ -148,6 +152,8 @@ But what is the current? Because the resistance is greater, and the voltage is t
 
 [An introduction to DC circuits in parallel](https://www.youtube.com/watch?v=5uyJezQNSHw)
 
+-----
+
 ## Component Glossary
 
 ### Capacitors
@@ -167,6 +173,8 @@ But what is the current? Because the resistance is greater, and the voltage is t
 
 ### Multimeter
 
+-----
+
 ## Hello Arduino
 Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output.
 
@@ -174,11 +182,49 @@ Arduino simplifies the process of working with microcontrollers by offering a un
 
 To use Arduino install the [Arduino Development Enviroment](https://www.arduino.cc/en/software) for your operating system and follow this [AdaFruit guide to set up your Feather board in the Arduino board manager](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/using-with-arduino-ide).
 
-## Elements of Microcontrollers
+### The Arduino IDE
+As mentioned, Arduino proejcts are programmed in the Arduino IDE (Integrated Development Environment), Arduino's IDE features:
+- Code editor - where you write your Arduino "sketches"
+- Board manager - where you manage your various microcontrollers
+- Library manager - where you can find and use a range of pre-written libraries
+- Compiler - that will build and load your sketches to your board
+- Serial monitor - that will show you a log of all serial communication and allow you to entre simple serial commands
 
-### CPU
+![Arduino IDE](https://core-electronics.com.au/media/wysiwyg/tutorials/aidan/arduino-ide.png)
 
-### GPIO
+The IDE's serial monitor also features a nifty serial plotter that is incredibly useful in understanding input and output signals.
+![Serial plotter](https://arduinogetstarted.com/images/tutorial/arduino-serial-plotter-single-graph.jpg)
+
+### Anatomy of Arduino Sketches
+[Arduino language reference](https://www.arduino.cc/reference/en/)
+
+Arduino projects are writed in a slightly modified version of C++.
+
+Every Arduino project starts with two predefined methods `setup()` and `loop()`, this is part of a loop-based programming model that would be familiar if you've used Processing or P5.js before.
+
+The `setup()` method is called once, when your sketch begins execution on the microcontroller and is only called once. This is where you'll perform all dynamic initialization, like activating sensors, connecting to WiFi, preparing arrays and defining initial application state.
+
+The `loop()` method is executed right after the `setup()` completes and repeats forever (or until your code explodes). The loop is the meat and potatoes of your Arduino sketch and is where you'll repeatedly read input data, perform calculations, modify application state and write to outputs.
+
+An app-loop model implies several design considerations, 
+
+More on that in the examples and in class.
+
+### Elements of Microcontrollers
+
+The two elements of physical computing projects are, well, the physical, and the computing. How does these relate to Arduino?
+
+![Arduino GPIO pinout](https://tse3.mm.bing.net/th?id=OIP.J3GeuERadqLEq3hBtAhh-gHaGU&pid=Api)
+
+Arduino's board architecture (or any microcontroller for that matter) is made of many different components but at a high level is made of two parts:
+- MCU (or Microcontroller unit) - this is the black bar in the diagram, the brain of the Arduino that integrates the CPU, memory and other core components of the "on board computer"
+- GPIO (general purpose inputs and outputs) - these are the pins on the sides of the board - they are the device's "senses" and provide an interface to digital and analog inputs and outputs.
+
+Most of our work with microcontrollers is to sense the world around us using GPIO inputs, process that information and respond to it by sending outputs to output GPIO or communicating it with other devices.
+
+The Arduino language and libraries make working with inputs and outpus extremely easy, and abstract most of the low level operations that are required to interface the MCU with the GPIO. This means we can code at a higher level of abstraction, concering mostly with the meaning and operation of inputs and outputs, and frees our minds to be more creative with physical computing.
+
+-----
 
 ## Introduction to the ESP32 and AdaFruit Feather 
 The microcontroller you received from IxD is an [Adafruit Feather Huzzah 32](https://www.adafruit.com/product/3405). It's a small board that packs a serious punch, based on the [Espressif ESP32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/esp32-faq), a dual-core microcontroller that features built-in WiFi, Bluetooth, battery power and flash memory.
