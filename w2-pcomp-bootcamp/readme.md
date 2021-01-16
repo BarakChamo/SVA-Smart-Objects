@@ -348,7 +348,36 @@ The ESP32 is compatible with the Arduino runtime, meaning that you can program i
 
 We chose the Adafruit board for you because Adafruit provides a wealth of educational information and the board is compatible with the [Adafruit Feather Wing modular extension system.](https://learn.adafruit.com/adafruit-feather)
 
-#### Moving forward with ESP32 based boards and microcontrollers
+### Feather32 setup instructions
+
+1. begin by installing the [Arduino IDE for your OS](https://www.arduino.cc/en/software)
+2. Add ESP32 board support by [following these instructions (use the stable version)](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
+3. Choose the `Adafruit ESP32 Feather` in the board list when compiling and flashing sketches
+4. You may have to install [additional USB drivers from here](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/using-with-arduino-ide) in case your board is not detected.
+5. Avoid using the board with USB extenders or exapnders, it needs a lot of power and should be connected either to your computer directly or to an external power supply
+
+#### How to know if the installation is working?
+
+1. In the Arduino IDE, choose `File > examples > 01. Basic > Blink`, this will open an example blink sketch that will flash your onboard LED.
+![capture](https://user-images.githubusercontent.com/2883345/104824980-d7f29b80-5824-11eb-9c25-f6ea68416580.PNG)
+
+2. Make sure your board type is selected by choosing `Tools > Board > ESP32 Arduino > Adafruit ESP32 Feather`
+![capture](https://user-images.githubusercontent.com/2883345/104824981-d7f29b80-5824-11eb-8ee0-bb84bb60ee2b.PNG)
+
+3. Make sure your device is connected to USB and choose the right port (the name will vary)
+![capture](https://user-images.githubusercontent.com/2883345/104824984-d88b3200-5824-11eb-9b87-1c8ca42be4f4.PNG)
+
+4. Press the `->` Upload button in the top
+![capture](https://user-images.githubusercontent.com/2883345/104824982-d7f29b80-5824-11eb-9d65-48cb564a2ebb.PNG)
+
+5. Watch as your code is compiled and uploaded, you should receive a `Done Uploading` message if all went well
+![capture](https://user-images.githubusercontent.com/2883345/104825010-1daf6400-5825-11eb-9c15-df2d250c04ac.PNG)
+
+6. If you're missing the board in the port list, or failing to build and upload, try to install the additional drivers.
+
+LED blinking? you're good to go! (pro tip: try changing the delay values to get a sense for Arduino programming)
+
+### Moving forward with ESP32 based boards and microcontrollers
 
 The great this about the ESP32 platform, especially when coupled with Arduino-based development, is that you can easily move your project to another board with more features or a different layout, with minimal changes to your code.
 
