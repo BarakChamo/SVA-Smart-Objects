@@ -29,6 +29,11 @@
 ## Additional readings
 - [Introduction to basic circuits](https://learn.sparkfun.com/tutorials/what-is-a-circuit/all)
 
+Welcome to Week 2's class notes!
+
+The main page will give you a general introduction to revelant topics for the class.
+Each exerise will have its own page that will build on these topics and bring them together in concrete examples.
+
 -----
 
 ## What is Physical Computing?
