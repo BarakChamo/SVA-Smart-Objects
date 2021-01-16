@@ -68,6 +68,7 @@ We can think of this tank as a battery, a place where we store a certain amount 
 
 ### Current
 [A brief explaination of current on YouTube](https://www.youtube.com/watch?v=kcL2_D33k3o)
+
 [Another great review of electrical current](https://www.youtube.com/watch?v=kYwNj9uauJ4&feature=emb_title) 
 
 We can think of the amount of water flowing through the hose from the tank as current. The higher the pressure, the higher the flow, and vice-versa. With water, we would measure the volume of the water flowing through the hose over a certain period of time. With electricity, we measure the amount of charge flowing through the circuit over a period of time. Current is measured in Amperes (usually just referred to as "Amps"). An ampere is defined as 6.241*10^18 electrons (1 Coulomb) per second passing through a point in a circuit. Amps are represented in equations by the letter "I".
@@ -113,7 +114,7 @@ This brings us to Georg Ohm. Ohm defines the unit of resistance of "1 Ohm" as th
 
 Combining the elements of voltage, current, and resistance, Ohm developed the formula:
 
-alt text
+![_](https://cdn.sparkfun.com/assets/a/5/0/2/6/5113d140ce395f777e000000.gif)
 Where
 
 V = Voltage in volts
