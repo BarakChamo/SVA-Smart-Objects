@@ -47,6 +47,7 @@ how these translate to voltage and current, and how they can be manipulated.
 
 ### Voltage
 [A brief explaination of volatage on YouTube](https://www.youtube.com/watch?v=w82aSjLuD_8)
+
 [More info about the physics behind voltage and electrical potential](https://www.youtube.com/watch?v=z8qfhFXjsrw&feature=emb_title)
 
 We define voltage as the amount of potential energy between two points on a circuit. One point has more charge than another. This difference in charge between the two points is called voltage. It is measured in volts, which, technically, is the potential energy difference between two points that will impart one joule of energy per coulomb of charge that passes through it (don't panic if this makes no sense, all will be explained). The unit "volt" is named after the Italian physicist Alessandro Volta who invented what is considered the first chemical battery. Voltage is represented in equations and schematics by the letter "V".
@@ -90,7 +91,9 @@ Now we're starting to see the relationship between voltage and current. But ther
 
 ### Resistance and Ohm's Law
 [A brief explaination of Ohm's law](https://www.youtube.com/watch?v=HsLLq6Rm5tU)
+
 [Another great visual demonstration of Ohm's law](https://www.youtube.com/watch?v=8jB6hDUqN0Y&feature=emb_title)
+
 [Ohm's law calculator](https://theengineeringmindset.com/ohms-law-calculator/)
 
 Consider again our two water tanks, one with a narrow pipe and one with a wide pipe.
@@ -132,6 +135,7 @@ But what is the current? Because the resistance is greater, and the voltage is t
 
 ### DC Circuits
 [An introduction to DC circuits in series](https://www.youtube.com/watch?v=VV6tZ3Aqfuc)
+
 [An introduction to DC circuits in parallel](https://www.youtube.com/watch?v=5uyJezQNSHw)
 
 ## Component Glossary
