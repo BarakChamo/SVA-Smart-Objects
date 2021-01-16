@@ -247,7 +247,7 @@ The rest of the pin grid is marked by row and column, with every half row connec
 why the middle divider? to double the amount of usable space on a breadboard and to facilitate mounting microcontrollers.
 
 Let's review a simple diagram circuit to understand how breadboards are used:
-![breadboard diagram](https://cdn.tutsplus.com/mac/uploads/2013/10/completecircuit.png)
+![breadboard diagram](https://user-images.githubusercontent.com/2883345/104817005-8f1ef080-57ec-11eb-82ea-563286c6be66.png)
 
 What's happening in this circuit:
 - The power source (battery bank) is connected to the power terminals - notice the red, or positive charge is connected to the red terminal and the ground, or negative charge, is connected to the blue terminal - this is just a convention but one you should follow if you don't want to accidentally fry your Arduinos at 3AM.
