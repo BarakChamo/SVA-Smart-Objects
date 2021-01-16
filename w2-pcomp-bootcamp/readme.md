@@ -16,6 +16,7 @@
 - [Alternative IoT Platforms](#alternative-iot-platforms)
 
 ## Example projects
+- [Basic circuits]()
 - [Hello World]()
 - [Serial read and write]()
 - [First Blink and PWM]()
@@ -156,6 +157,8 @@ But what is the current? Because the resistance is greater, and the voltage is t
 
 [An introduction to DC circuits in parallel](https://www.youtube.com/watch?v=5uyJezQNSHw)
 
+[In depth overview of DC circuits on Sparkfun](https://learn.sparkfun.com/tutorials/series-and-parallel-circuits)
+
 -----
 
 ## Component Glossary
@@ -198,9 +201,9 @@ These may come in many variations but share the same principle and their polarit
 
 ## Tools of the Trade
 
-### Microcontroller
-
 ### Breadboard
+![A very detailed overview of breadboards](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard)
+
 
 ### Jumper cables
 
