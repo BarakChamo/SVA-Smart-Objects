@@ -211,7 +211,7 @@ A typical multimeter can measure voltage, current, and resistance as well as con
 
 Multimeters come in many shapes and sizes but generally feature a reading display and a dial for mode setting and sensitivity (calbirating the multimeter for voltage and current ranges).
 
-![Multimeter example](https://cpc.farnell.com/productimages/large/en_GB/IN07444-40.jpg).
+![Multimeter example](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/1/01_Multimeter_Tutorial-01.jpg).
 
 Multimeter probes are used to contact points in the circuit we wish to test.
 
@@ -221,6 +221,40 @@ Multimeter probes are used to contact points in the circuit we wish to test.
 ### Breadboard
 [A very detailed overview of breadboards](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard)
 
+![breadboard](https://cdn.sciencebuddies.org/Files/7304/6/breadboard-hole-leads.jpg)
+
+A breadboard is a construction base for prototyping of electronics, also known as a solderless board or plugboard. Breadboards make it easy to prototype circuits by plugging
+components into connected terminals without the need for soldering, making the process quick and the components reusable, it is an invaluable tool for quick physical computing iteration but understanding the topology of a breadboard is key to using it well.
+
+
+To understand how power flows in a typical breadboard, let's look at it's bottom with the adhesive pad removed:
+![breadboard back](https://static1.makeuseofimages.com/wp-content/uploads/2018/06/breadboard_back_peel_670.jpg?q=50&fit=crop&w=750&dpr=1.5)
+
+As you can see, certain pins are connected by long metal strips, making them "essentially the same pin". this allows us to establish direct connection
+between pins that are mounted on the same strip, and what make the "solderless contact".
+
+So why are some pins connected and others not? and why are the orientations different?
+
+Let's review the topology of a breadboard:
+![breadboard topology](https://static1.makeuseofimages.com/wp-content/uploads/2018/06/breadboard_annotated_670-1.jpg?q=50&fit=crop&w=750&dpr=1.5)
+
+Most larger breadboards wil have two long lines on either side noted as `+` or `-`, these are the power terminals that are meant to make power delivery
+and circuit continuity easy across the breadboard. Note that the two sides are not connected, and you'll have to bridge them on your own if you want.
+
+The rest of the pin grid is marked by row and column, with every half row connected before and after the middle divider:
+![pin grid](https://cdn.sciencebuddies.org/Files/7326/6/breadboard-row-connections.png)
+
+why the middle divider? to double the amount of usable space on a breadboard and to facilitate mounting microcontrollers.
+
+Let's review a simple diagram circuit to understand how breadboards are used:
+![breadboard diagram](https://cdn.tutsplus.com/mac/uploads/2013/10/completecircuit.png)
+
+What's happening in this circuit:
+- The power source (battery bank) is connected to the power terminals - notice the red, or positive charge is connected to the red terminal and the ground, or negative charge, is connected to the blue terminal - this is just a convention but one you should follow if you don't want to accidentally fry your Arduinos at 3AM.
+- A power line is connecting the red power terminal to a button in row F6, this feeds power into the circuit - notice it is in the same row and half as the top pin of the button, so they are connected by the breadboard's internal bridges.
+- The bottom pin of the button is connected to the top pin of an LED -again notice how components are placed vertically, so their pins are not conencted to one another, while connection line are placed horizontally to essentially connected the components without soldering - this is the magic of breadboards.
+- In the final connection, a resistor is placed vertically, this is done to save in wires and connections, and conncets the bottom leg of the LED to the final connection.
+- The last black connection is running back to the ground terminal, thus completing the circuit - when the button is pressed, the LED will light up!
 
 -----
 
