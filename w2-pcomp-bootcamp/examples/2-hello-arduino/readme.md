@@ -12,7 +12,7 @@ Writing our own microcontroller programs, or sketches, gives us complete control
 Most Arduino boards, our Feather included, can be powered from USB as well as directly from power and ground pins.
 
 Note the `3v`, `USB` and  `GND` pins on the board:
-![feather schematic](https://cdn-learn.adafruit.com/assets/assets/000/041/620/original/feather_3405_kit_ORIG.jpg?1494445526)
+![feather schematic](https://s3.amazonaws.com/learn-production/guides/images/000/001/641/medium800/thumb.jpg?1494450119)
 
 The Adafruit Feather has a built is power regulator and can convert 5V coming in from the USB port or `USB` pin to its 3.3v operating voltage, you can also power it will 3.3v directly from the `3v` pin, with `GND` connected to common ground.
 
