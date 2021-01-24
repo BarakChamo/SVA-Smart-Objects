@@ -38,6 +38,9 @@ Turn the dial on your potentiometer and notice the flashing rate of the LED.
 As mentioned, using analog sensors and an analog read makes it very easy to swap sensors, let's change up the circuit to use a photoresistor (light sensor):
 ![photo circuit](https://github.com/BarakChamo/SVA-Smart-Objects/blob/main/w2-pcomp-bootcamp/examples/4-analog-input/WIN_20210123_12_33_11_Pro.jpg?raw=true)
 
+You can follow this circuit diagram
+![photo schematic](https://github.com/BarakChamo/SVA-Smart-Objects/blob/main/w2-pcomp-bootcamp/examples/4-analog-input/analog%20sensor%20circuit.png)
+
 Notice that in addition to swapping the sensor, we are adding another resistor that goes to ground, this kind of circuit is called a "resistance divider", why?
 
 The analog GPIO pins are capable of reading voltage variation that is the result of changing resistance on our sensors, but different sensors have different resistance ranges and the board can't automatically guess them all. Potentiometers make this process easy because they typically go all the way from no resistance, or very little, to a lot, but other sensors will have variable ranges.
