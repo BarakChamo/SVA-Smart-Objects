@@ -26,6 +26,7 @@ Included components:
 - 3X 220 Ohm resistors
 
 You can follow this circuit diagram to complete the circuit, start with one LED and then add the other.
+![button circuit](https://github.com/BarakChamo/SVA-Smart-Objects/blob/main/w2-pcomp-bootcamp/examples/3-digital-in-out/digital%20circuit.png?raw=true)
 **Make sure you connect all components to the correct GPIO pins**
 
 ### The code
