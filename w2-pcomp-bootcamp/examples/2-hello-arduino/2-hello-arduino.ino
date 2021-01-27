@@ -6,6 +6,7 @@
 // global variables are accesible by both the setup and loop function.
 
 String name = "Barak";
+String message;
 
 void setup() {
   // this is the setup function, this is where we'll performn
@@ -30,6 +31,15 @@ void loop() {
   Serial.print(millis() / 1000); // let's get the current time in milliseconds and divide to get runtime in seconds
   Serial.println("seconds."); // finally, call println to break a line
 
+  // Check if any serial input is available
+  if(Serial.available()) {
+    // read the incoming message into the string variable
+    message = Serial.readString();
+
+    // print out the message to the serial monitor
+    Serial.println(message);
+  }
+  
   // delay execution by a second to not hammer the serial monitor too much
   // (these loops are fast)
   delay(1000);
