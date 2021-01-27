@@ -18,13 +18,11 @@
 - [Alternative IoT Platforms](#alternative-iot-platforms)
 
 ## Example projects
-- [Basic analog circuit]()
-- [Hello World]()
-- [Serial read and write]()
-- [First Blink and PWM]()
-- [Working with analog inputs and outputs]()
-- [Working with digital inputs and outputs]()
-- [Timing and flow control]()
+- [Basic analog circuit](https://github.com/BarakChamo/SVA-Smart-Objects/tree/main/w2-pcomp-bootcamp/examples/1-basic-analog)
+- [Hello Arduino](https://github.com/BarakChamo/SVA-Smart-Objects/tree/main/w2-pcomp-bootcamp/examples/2-hello-arduino)
+- [Digital ins and outs](https://github.com/BarakChamo/SVA-Smart-Objects/tree/main/w2-pcomp-bootcamp/examples/3-digital-in-out)
+- [Analog input](https://github.com/BarakChamo/SVA-Smart-Objects/tree/main/w2-pcomp-bootcamp/examples/4-analog-input)
+
 
 ## Additional readings
 - [Introduction to basic circuits](https://learn.sparkfun.com/tutorials/what-is-a-circuit/all)
