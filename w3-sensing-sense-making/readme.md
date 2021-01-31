@@ -27,3 +27,9 @@
 - [Arduino's analogRead()](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread)
 - [Arduino's analogWrite()](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite)
 - [Arduino's analogWriteResolution()](https://www.arduino.cc/reference/en/language/functions/zero-due-mkr-family/analogwriteresolution)
+
+#### Dealing with Data in Code
+##### Reference
+- Arduino's map() function
+- Arduino's min() and max() functions
+- [Arduino's Debounce tutorial](https://www.arduino.cc/en/pmwiki.php?n=Tutorial/Debounce)
