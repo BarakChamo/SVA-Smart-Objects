@@ -8,8 +8,7 @@
 - [ESP32 Analog write polyfill - required to get AnalogWrite() to work on ESP32 (available in the Arduino Library Manager)](https://github.com/ERROPiX/ESP32_AnalogWrite)
 - [P5.serial (Serial communication for P5.js)](https://github.com/p5-serial)
 
-
-###
+--------
 
 ### GPIO, Digital and Analog Signal
 
@@ -27,4 +26,4 @@
 ##### Reference
 - [Arduino's analogRead()](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread)
 - [Arduino's analogWrite()](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite)
-
+- [Arduino's analogWriteResolution()](https://www.arduino.cc/reference/en/language/functions/zero-due-mkr-family/analogwriteresolution)
