@@ -1,8 +1,10 @@
 # Smart Objects Week 3 - Sensing & Sense-making
 
-## Contents
-
 ## Examples
+
+1. [Managing data in Arduino](https://github.com/BarakChamo/SVA-Smart-Objects/tree/main/w3-sensing-sense-making/examples/1-managing-data)
+2. [Building a clap light](https://github.com/BarakChamo/SVA-Smart-Objects/tree/main/w3-sensing-sense-making/examples/2-clap-light)
+3. [Analog and digital lights](https://github.com/BarakChamo/SVA-Smart-Objects/tree/main/w3-sensing-sense-making/examples/3-analog-digital-lights)
 
 ## Relevant links
 - [ESP32 Analog write polyfill - required to get AnalogWrite() to work on ESP32 (available in the Arduino Library Manager)](https://github.com/ERROPiX/ESP32_AnalogWrite)
@@ -31,6 +33,6 @@
 
 #### Dealing with Data in Code
 ##### Reference
-- Arduino's map() function
-- Arduino's min() and max() functions
+- [Arduino's map() function](https://www.arduino.cc/reference/en/language/functions/math/map/)
+- Arduino's [min()](https://www.arduino.cc/reference/en/language/functions/math/min/) and [max()](https://www.arduino.cc/reference/en/language/functions/math/max/) functions
 - [Arduino's Debounce tutorial](https://www.arduino.cc/en/pmwiki.php?n=Tutorial/Debounce)
