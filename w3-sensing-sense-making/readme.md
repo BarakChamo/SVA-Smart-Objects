@@ -7,6 +7,7 @@
 ## Relevant links
 - [ESP32 Analog write polyfill - required to get AnalogWrite() to work on ESP32 (available in the Arduino Library Manager)](https://github.com/ERROPiX/ESP32_AnalogWrite)
 - [P5.serial (Serial communication for P5.js)](https://github.com/p5-serial)
+- [PySerial(Python library for serial communication)](https://pypi.org/project/pyserial/)
 
 --------
 
