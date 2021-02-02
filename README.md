@@ -6,7 +6,7 @@ The repo is divided into topics by week, each week folder has a readme with rele
 
 ### Class pages
 - [Week 2 - Physical computing bootcamp](https://github.com/BarakChamo/SVA-Smart-Objects/tree/main/w2-pcomp-bootcamp)
-- [Week 3 - Connect all the Things](https://github.com/BarakChamo/SVA-Smart-Objects/tree/main/w3-connect-all-the-things)
+- [Week 3 - Connect all the Things](https://github.com/BarakChamo/SVA-Smart-Objects/tree/main/w3-sensing-sense-making)
 - [Week 4 - Sensing and Sense-making](https://github.com/BarakChamo/SVA-Smart-Objects/tree/main/w4-sensing-sense-making)
 
 ### Using the class repository
