@@ -13,5 +13,23 @@ Note: the operating voltage of the Feather board is 3.3v which is enough to powe
 ### Circuit
 ![circuit](https://github.com/BarakChamo/SVA-Smart-Objects/blob/main/w3-sensing-sense-making/examples/4-LCD/circuit.jpg)
 
+
+### Pins
+
+LCD Pin | Feather pin
+------------ | -------------
+VSS | GND
+VDD | 3.3V
+V0 | GND
+RS | 14
+RW | GND
+E | 32
+D4 | 15
+D5 | 33
+D6 | 27
+D7 | 12
+A | 3.3v
+K | GND
+
 ### Code
 [The sketch is available here](https://github.com/BarakChamo/SVA-Smart-Objects/blob/main/w3-sensing-sense-making/examples/4-LCD/4-LCD.ino)
