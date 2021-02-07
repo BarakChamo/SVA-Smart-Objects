@@ -4,10 +4,6 @@
 This week we'll learn how to connect our devices to the Internet of Things!
 We'll trigger digital actions from physical interactions and actuate physical actions based on digital actions.
 
-## Content
-- [Physical and Virtual Things]()
-- [Introduction to Blynk]()
-- [Hooking Things Up]()
 
 ## Examples 
 - [Blynk example](https://github.com/BarakChamo/SVA-Smart-Objects/tree/main/w4-connect-all-the-things/1-basic-blynk_)
@@ -24,7 +20,6 @@ We'll trigger digital actions from physical interactions and actuate physical ac
 - Blynk libraries for [Python](https://github.com/blynkkk/lib-python) and [JavaScript](https://github.com/vshymanskyy/blynk-library-js)
 
 ### IFTTT
-
-### Physical and Virtual Things
-
-### 
+- [IFTTT signup](https://ifttt.com/join)
+- [IFTTT Maker service](https://ifttt.com/maker_webhooks)
+- [IFTTT Slack integration](https://ifttt.com/slack)
