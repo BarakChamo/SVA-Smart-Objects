@@ -17,6 +17,7 @@ We'll trigger digital actions from physical interactions and actuate physical ac
 - [Blynk IoT cloud service]()
 - [Blynk docs - introduction](http://docs.blynk.cc/)
 - [Blynk docs - widgets](http://docs.blynk.cc/#widgets)
+- [Understanding Blynk's virtual pins](http://help.blynk.cc/en/articles/512061-what-is-virtual-pins)
 - [Blynk docs - ESP32 library](http://docs.blynk.cc/#blynk-firmware)
 - [Blynk example builder](https://examples.blynk.cc/?board=ESP8266&shield=ESP8266%20WiFi&example=Widgets%2FTerminal)
 - [Blynk API documentation](https://blynkapi.docs.apiary.io/#reference)
