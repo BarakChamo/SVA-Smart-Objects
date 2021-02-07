@@ -5,7 +5,9 @@ interact with digital interfaces, report telemetry from physical sensors and con
 
 This is a multi-part example that will cover several topis.
 
-## Setting up Blynk and Arduino
+## Setting up Blynk, Arduino and IFTTT
+
+### Blynk setup
 
 Before we can get started, please download the [Blynk app](https://blynk.io/) to your phone and sign up for a free account.
 Then, install the `Blynk` library from the Arduino IDE's Library Manager in `Sketch > Include Library > Manage Libraries`.
@@ -29,6 +31,14 @@ in your project's configuration sceen. Replace `YOUR_BLYNK_PROJECT_AUTH_TOKEN` w
 
 Finally, replace `WIFI_SSID` and `WIFI_PASS` with your WiFi credentials.
 
+### IFTTT setup
+
+Later in this example we'll be connecting Blynk and IFTTT, the IoT trigger service to send Slack notifications using our devices.
+
+To do that, please sign up for a free account with [IFTTT here](https://ifttt.com/home)
+
+Once signed up, set up the Maker service that will allow you to use webhooks to trigger IFTTT actions.
+Go to [IFTTT Maker Service](https://ifttt.com/maker_webhooks) and press the `documentation` button, record your unique key
 
 ## Part 1 - Blinking with Blynk
 
@@ -176,3 +186,116 @@ void onTimer() {
 ```
 
 Refer to class notes for more information about working with virtual pins.
+
+## Part 4 - Triggering actions
+
+Finally, let's see how to do more interesting things than updating the Blynk dashboard, interacting with real digital services and other online systems!
+
+Let's do so by adding a button to our board, and use it to:
+- show an indicator on the project dashboard
+- send a push notification
+- send us a message on Slack using IFTTT
+
+### circuit
+
+Add a button to your circuit and connect it to digital pin 14
+
+![part 4](https://github.com/BarakChamo/SVA-Smart-Objects/blob/main/w4-connect-all-the-things/part4.png)
+
+### Sketch
+We'll be using the same sketch.
+
+Notice the following parts of the code where virtual pins are updated:
+
+Using our onTimer timer callback, we continuously update the state of the virtual pins used by the button and LED widgets.
+Notice we're multiplying the digital value, 0 or 1, by 255, to turn the LED on our dashboard on and off - it expects an analog range and can be dimmed!
+```cpp
+void onTimer() {
+  // Write to virtual pins.
+  // don't send more that 10 values per second.
+  Blynk.virtualWrite(V5, potValue);
+  Blynk.virtualWrite(V6, buttonValue);
+  Blynk.virtualWrite(V7, buttonValue * 255); // write to virtual LED pin
+}
+```
+
+Using a simple function in our loop, we catch changes to our button's digital value to trigger actions only when it is first pressed, this is
+to assure we don't constantly write to the virtual pins, but only once when the button is pressed:
+```cpp
+  // if button is pressed, send push notification to Blynk app
+  if(tempButtonValue && !buttonValue) {
+    // careful! notice we're only writing to Blynk in loop() under certain conditions
+    Blynk.notify("Yaaay... button is pressed!");
+    Blynk.virtualWrite(V8, "Hello from my Feather!"); // write to virtual webhook pin
+  }
+  
+```
+
+Here, we call `Blynk.notify` to trigger a notification using the Push Notification widget.
+Writing to virtual pin 8 will trigger the webhook that we will connect to Slack using IFTTT, see how we can even write strings to virtual pins?!
+
+### Blynk project
+
+In our sketch we'll add a few diffrent components, an indicator, a webhook and a push notification
+
+#### Button indicator
+Add a Value Display and and LED widget, set the Value Display to read from virtual pin 6 and the LED to read from virtual pin 7.
+Set both widgets to `PUSH` as reading mode.
+
+#### push notification
+Next, add a push notification widget, notice the push notification is generic and is not tied to a specific pin.
+
+In our Arduino code we call `Blynk.notify(NOTIFICATION);`, you can use this call with any value to trigger a push notification on your connected mobile device.
+
+#### webhook - IFTTT and Slack integration
+Finally, add a Webhook widget.
+
+##### What are webhooks
+Webhooks are public URL addresses that allow different services to trigger actions, like APIS. 
+We can use webhooks to accept incoming actions from 3d-party services, or use other services' webhooks to trigger actions from our own devices and code.
+Using the webhook widget, we can call web APIs and Webhooks whenever a virtual pin is triggered, this is an incredibly powerful feature that you can use to connect
+your smart devices and any public online service, from Gmail to Spotify - in this example we'll be using If This Than That -IFTTT.
+
+##### Create IFTTT tigger event
+
+1. Sign up to IFTTT and find your unique key using the instructions at the top of this page
+2. Go to [IFTTT's Create wizard](https://ifttt.com/create)
+3. In `If this`, choose `Webhooks` and then `receive a web request`
+4. Name your event, for example `SEND_SLACK` and press `Create Trigger`
+5. In `then than`, choose `Slack` and `Post to Channel`
+6. You'll be prompted to authenticate Slack with IFTTT, allow it access to the SVA IxD Slack.
+7. In `Post to Channel` settings, choose `Channels` and `#device-chat`
+8. Specify the title and message body you'd want to send when your button is pressed, you can add `ingredients`, or dynamic values that we'll populate from Blynk!
+9. Add at least one ingredient, using the predefined name `value1`
+10. Press `Create`, `Continue` and `Finish`
+11. Verify your trigger is set to `Connected`
+
+##### Blynk webhook configuration
+Open the Webhook widget's configuration and configure a connection to IFTTT's Maker webhooks.
+Documenetation of the maker webhook is available by pressing `Documentation` [here](https://ifttt.com/maker_webhooks)
+
+**OUTPUT**
+We'll be using Virtual Pin 8 to trigger the webhook.
+
+**URL**
+IFTTT's Maker Service webhook URL is formatted as follows:
+`https://maker.ifttt.com/trigger/{EVENT_NAME}/with/key/{USER_KEY}`
+
+You should have your unique user key, the event name will match whatever you called it, in  this example it is `SEND_SLACK`.
+Format your URL and enter it in Blynk's Webhook widget `URL` field.
+
+**METHOD**
+We want to send dynamic data to our webhook, incuding a customized message and values from our device, so set the METHOD to `PUT` to allow sending a JSON payload
+
+**BODY**
+This is the JSON that is sent to IFTTT's webhook and will replace trigger "ingredients" such as `value1`. Ingredients are matched by name from this JSON object to the content of our Slack triggers.
+
+Blynk will dynamically replace any occurance of the string `/pin/` with the content sent with `virtualWrite()` from our Arduino code, the combination of this feature and IFTTT's ingredients allows us to easily send values from our Arduino code all the way to Slack messages with a single line of code.
+
+Set the body to the following JSON string
+`{"value":"/pin/"}`
+
+Be careful when typing, malformed JSON strings will cause an error.
+
+Upload the code to your boards, press play on Blynk, and press the  buttton!
+
