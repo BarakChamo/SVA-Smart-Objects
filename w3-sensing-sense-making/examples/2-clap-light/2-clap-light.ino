@@ -2,12 +2,12 @@
   Analog Input 
 */
 
-int ledPin = 32;
+int ledPin = 12;
 int sensorPin = A0;    // select the input pin for the sensor
 int sensorValue = 0;  // variable to store the value coming from the sensor
 
 // clap light paramaters
-int triggerThreashold = 100; // minimum analog value to count as trigger
+int triggerThreashold = 200; // minimum analog value to count as trigger
 int triggerDuration = 200; // how long between values to count as a trigger
 int triggerInterval = 500; // how long between triggers to toggle lights
 int lastTrigger = 0; // keep track of the last time the previous trigger was detected
