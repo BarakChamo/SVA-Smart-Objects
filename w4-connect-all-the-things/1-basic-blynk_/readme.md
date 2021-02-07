@@ -120,7 +120,59 @@ to other virtual pins.
 In this case, we want to use the pin's value as an integer so we call `param.asInt()` but we can get floats, booleans, strings and more.
 Refer to the virtual pins reference for more options. 
 
-```cpp
+## Part 3 - Triggering cloud updates
 
+So far we've used the Blynk dashboard to turn LEDs on and off on our app, let's see how we can go in the other direction and read values from our board into the dashboard.
+
+We'll do so with a potentiometer, but you can use any analog sensor you like.
+
+### Circuit
+
+![part 3](https://github.com/BarakChamo/SVA-Smart-Objects/blob/main/w4-connect-all-the-things/part3.png)
+
+Note: when WiFi is used, only certain analog pins can be used for AnalogRead, these are limited to pins using ADC #1, refer to Adafruit's documentation to find which are correct for your board.
+
+### Blynk project
+
+Add a vertical Level widget, we'll use this level as an indicator for our potentiometer's resistance.
+
+<img src="https://github.com/BarakChamo/SVA-Smart-Objects/blob/main/w4-connect-all-the-things/Screenshot_2021-02-07-13-13-33-22_980d3cd05c70b8deb691e1a04aeb6aca_2.jpg" width="400">
+
+Configure the Level to listen to `VIRTUAL` pin `5`, with a range of 0 to 4095, to match our analog read resolution, and a reading rate of `PUSH`, this means the value will update whenever the Arduino code pushes new updates. 
+
+### Sketch
+
+We'll be using the same sketch.
+
+An important thing to note is that we don't want to send values to Blynk every time our loop() is called, which will result in hundreds of calls per second and cause Blynk to block your project. Instead, we'll configure a timer to call a function every X seconds and send updates to Blynk on defined intervals.
+
+To set up the timer, we create a Timer object and configure its interval:
+
+```cpp
+BlynkTimer timer;
+
+void setup() {
+  // start the Blink service over WiFi
+  Blynk.begin(auth, ssid, pass);
+
+  // configure the blynk timer to call onTimer() every second
+  timer.setInterval(1000L, onTimer);
+}
 ```
 
+Notice the `onTimer` function passed to `timer.setInterval`, that is a function we write, a callback that the timer will call once per interval:
+In this timer we call `Blynk.virtualWrite(PIN, VALUE)`, just like `digitalWrite` and `analogWrite`, and our dashboards will update automatically!
+
+```cpp
+// define a timer callback
+// this is where we write to Blynk virtual pins
+void onTimer() {
+  // Write to virtual pins.
+  // don't send more that 10 values per second.
+  Blynk.virtualWrite(V5, potValue);
+  Blynk.virtualWrite(V6, buttonValue);
+  Blynk.virtualWrite(V7, buttonValue * 255); // write to virtual LED pin
+}
+```
+
+Refer to class notes for more information about working with virtual pins.
