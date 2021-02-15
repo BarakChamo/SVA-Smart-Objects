@@ -35,6 +35,7 @@ void onTimer() {
   Blynk.virtualWrite(V6, buttonValue);
   Blynk.virtualWrite(V7, buttonValue * 255); // write to virtual LED pin
 }
+<<<<<<< HEAD
 
 
 // called when the device is connected to the Blynk server
@@ -50,6 +51,8 @@ BLYNK_APP_CONNECTED() {
 // called when an app is disconnceted from the Blynk project
 BLYNK_APP_DISCONNECTED(){
 }
+=======
+>>>>>>> 5c3c45eb578f5bb3bed358f2f8256529cf47b28e
 
 // Listen for changes of virtual pin 4
 // BLYNK_WRITE are special functions that can be defined multiple times with different pin arguments
@@ -57,8 +60,11 @@ BLYNK_WRITE(V4) {
   ledValue = param.asInt();
   analogWrite(ledPin, ledValue);
 }
+<<<<<<< HEAD
 
 // for more Blynk firmware handlers visit http://docs.blynk.cc/#blynk-firmware
+=======
+>>>>>>> 5c3c45eb578f5bb3bed358f2f8256529cf47b28e
 
 void setup() {
   // Debug console
@@ -90,7 +96,11 @@ void loop() {
   if(tempButtonValue && !buttonValue) {
     // careful! notice we're only writing to Blynk in loop() under certain conditions
     Blynk.notify("Yaaay... button is pressed!");
+<<<<<<< HEAD
     Blynk.virtualWrite(V8, "Hello from Barak's Feather!"); // write to virtual webhook pin
+=======
+    Blynk.virtualWrite(V8, "Hello from my Feather!"); // write to virtual webhook pin
+>>>>>>> 5c3c45eb578f5bb3bed358f2f8256529cf47b28e
   }
   
   // keep track of latest button value
