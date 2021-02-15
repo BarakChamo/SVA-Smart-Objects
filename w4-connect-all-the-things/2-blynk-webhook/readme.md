@@ -13,6 +13,7 @@ Our circuit is very simple, just a single LED connected to analog output A1 with
 Create a new IFTTT recipe using Google Assistant (or any other service) as an "If this..." condition.
 
 If you're using Google Assistant, use the following settings:
+
 ![GA](https://github.com/BarakChamo/SVA-Smart-Objects/blob/main/w4-connect-all-the-things/Capture.2.PNG)
 
 Then, connect a "then that!" condition to use a webhook, we'll be pointing the webhook action at the Blynk HTTP API, setting a virtual pin 
