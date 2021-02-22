@@ -90,11 +90,7 @@ void loop() {
   if(tempButtonValue && !buttonValue) {
     // careful! notice we're only writing to Blynk in loop() under certain conditions
     Blynk.notify("Yaaay... button is pressed!");
-<<<<<<< HEAD
-    Blynk.virtualWrite(V8, "Hello from Barak's Feather!"); // write to virtual webhook pin
-=======
     Blynk.virtualWrite(V8, "Hello from my Feather!"); // write to virtual webhook pin
->>>>>>> 5c3c45eb578f5bb3bed358f2f8256529cf47b28e
   }
   
   // keep track of latest button value
