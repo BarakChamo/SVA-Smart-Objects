@@ -1,3 +1,7 @@
+#define BLYNK_TEMPLATE_ID "TMPLllqKdIoF"
+#define BLYNK_DEVICE_NAME "Simple Template"
+#define BLYNK_AUTH_TOKEN "YOUR AUTH TOKEN"
+
 #include <analogWrite.h>
 
 /* Comment this out to disable prints and save space */
@@ -12,7 +16,7 @@ const int ledPin = A1;
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "BLYNK_AUTH";
+char auth[] = BLYNK_AUTH_TOKEN;
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
