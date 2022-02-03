@@ -1,3 +1,7 @@
+#define BLYNK_TEMPLATE_ID "TMPLllqKdIoF"
+#define BLYNK_DEVICE_NAME "Simple Template"
+#define BLYNK_AUTH_TOKEN "YOUR AUTH TOKEN"
+
 #include <analogWrite.h>
 
 /* Comment this out to disable prints and save space */
